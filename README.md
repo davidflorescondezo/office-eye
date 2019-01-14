@@ -26,3 +26,4 @@ In terms of software & databases & Api's i'm deciding whether to use C# & MySQL 
 | Developing/Designing the front-end UI | 29 Jan | 05 Feb |
 | Polishing/Garbage Collection | 29 Jan | 05 Feb |
 | **Live Version** | 06 Feb | 06 Feb |
+for more info check out: https://trello.com/b/8vvpgd2T/officeye
