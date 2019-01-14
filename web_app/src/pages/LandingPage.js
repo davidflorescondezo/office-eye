@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import {Redirect} from 'react-router-dom';
 import * as routes from '../router/routes';
 import {auth} from '../firebase/firebase';
+import "../css/LandingPage.css";
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 
 const theme = createMuiTheme({
@@ -59,7 +60,7 @@ class LandingPage extends Component {
                         OfficEye
                     </h1>
                     <p className="line2nd">
-                        The solution to workplace unproductivity
+                        The IoT solution to workplace unproductivity
                     </p>
                     <p>
                     <div><Link to={routes.SIGN_UP}>
@@ -82,21 +83,23 @@ class LandingPage extends Component {
                     </p>
 
                     <p className="line4th">
-                        A better way to work together
+                    As an employer do you often struggle keeping your employees motivated? <br/>
+                    Do you wish you could know what your employees are really upto?  <br/>
+                    Do you wish you could know how many hrs a day they really spend working?
                     </p>
-
-                    <h1>
-                        As an employer do you often struggle keeping your employees motivated? Do you wish you could know what your employees are really upto? Do you wish you could know how many hrs a day they really spend working?
-                    </h1>
-                    <br/>
-                    <p className="line4th">
-                        We are offering ...
-                    </p>
-                    <h1>
-                        OfficeEye is your solution. OfficeEye will keep track of the time your employees spend on their desks and whether they are working on their computers or not. OfficeEye will compile all this information and display it for you in a super easy to use UI for you to manage all your employees, alongside a scoreboard visible to employees to keep them motivated and create a competetive environment encouraging employees to work more.
-                    </h1>
-                    <br/>
                 </p>
+                    <div className="landing_2ndBanner">
+                    <p className="Block3">
+                        <p className="line3rd">
+                            We are offering...
+                        </p>
+                        <p className="line5th">
+                            OfficeEye is your solution. OfficeEye will keep track of the time your employees spend on their desks and whether they are working on their computers or not. OfficeEye will compile all this information and display it for you in a super easy to use UI for you to manage all your employees, alongside a scoreboard visible to employees to keep them motivated and create a competetive environment encouraging employees to work more.
+                        </p>
+                    </p>
+                    </div>
+                    <br/>
+
                 {/*<Footer/>*/}
             </div>)
         )
