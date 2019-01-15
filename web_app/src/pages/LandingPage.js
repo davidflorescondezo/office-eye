@@ -70,28 +70,42 @@ class LandingPage extends Component {
                         value="Get-Started"
                         marginTop="normal"
                     >
-                        Get Started
+                        Find Out More
 
                         </Button></MuiThemeProvider>
                     </Link></div>
                     </p>
                 </div>
 
-                <p className="Block2">
+                <p className="Block3">
                     <p className="line3rd">
-                        OfficeEye for learners
-                    </p>
-
-                    <p className="line4th">
-                    As an employer do you often struggle keeping your employees motivated? <br/>
-                    Do you wish you could know what your employees are really upto?  <br/>
-                    Do you wish you could know how many hrs a day they really spend working?
+                        OfficeEye for Employers
                     </p>
                 </p>
+
+                <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <th>
+                        <img className="landing_img" src="http://gdurl.com/Dz-O" alt="Businness Photo"/>
+                        <p className="line4th">
+                        As an employer do you often struggle keeping employees motivated? </p>
+                    </th>
+                    <th>
+                        <img className="landing_img" src="http://gdurl.com/G8gX" alt="Businness Photo"/>
+                        <p className="line4th">
+                        Do you wish you could know what all your employees are really upto?  </p>
+                    </th>
+                    <th>
+                        <img className="landing_img" src="http://gdurl.com/B1un" alt="Businness Photo"/>
+                        <p className="line4th">
+                        Do you wish you could know how many hrs a day they spend working?</p>
+                    </th>
+                </tr>
+                </table>
                     <div className="landing_2ndBanner">
                     <p className="Block3">
                         <p className="line3rd">
-                            We are offering...
+                            We are Offering...
                         </p>
                         <p className="line5th">
                             OfficeEye is your solution. OfficeEye will keep track of the time your employees spend on their desks and whether they are working on their computers or not. OfficeEye will compile all this information and display it for you in a super easy to use UI for you to manage all your employees, alongside a scoreboard visible to employees to keep them motivated and create a competetive environment encouraging employees to work more.

@@ -1,3 +1,7 @@
+body{
+    background-color: #EDEFEF;    
+}
+
 .landing_banner{
     background-image : url("http://gdurl.com/tWnZ");
     background-size: 100% 100%;
@@ -17,10 +21,12 @@
 
 .Headline{
     font-size: 3em;
+    color: white;
 }
   
 .line2nd{
      font-size: 1.5em;
+     color: white;
 }
   
 .Block2{
@@ -38,9 +44,9 @@
     padding-top : 1%;
     text-align: left;
 }
-  
+
 .line3rd{
-    text-align: center;
+    text-align: left;
     font-size: 2em;
     color: #00251a;
     font-weight: 900;
@@ -49,10 +55,19 @@
 .line4th{
     text-align: center;
     font-size: 1.5em;
+    color: #0C2C29;
 }
   
 .line5th{
     text-align: left;
     font-size: 1.1em;
     color: #686868;
+    line-height: 150%; 
+}
+
+.landing_img{
+    max-width:100%;
+    width: 80%;
+    max-height:100%;
+
 }
