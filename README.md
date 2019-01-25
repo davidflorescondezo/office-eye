@@ -2,7 +2,7 @@
 
 ### Pitch
 As an employer do you often struggle keeping your employees motivated? Do you wish you could know what your employees are really upto? Do you wish you could know how many hrs a day they really spend working?
-OfficeEye is your solution. OfficeEye will keep track of the time your employees spend on their desks and whether they are working on their computers or not. OfficeEye will compile all this information and display it for you in a super easy to use UI for you to manage all your employees, alongside a scoreboard visible to employees to keep them motivated and create a competetive environment encouraging employees to work more.
+OfficeEye is your solution. OfficeEye will keep track of the time your employees spend on their desks and whether they are working on their computers or not. OfficeEye will compile all this information and display it for you in a super easy to use UI for you to manage all your employees, alongside a scoreboard visible to employees to keep them motivated and create a competetive environment encouraging employees to work more.coool to test
 
 ### Hardware/Software Used
 For this kind of "monitoring/survalance" system I would prefer for my artifact to be as small as possible to keep it as concealed to the employee as possible. This is to create a safe enevirnoment for the employee. As a result I have researched microcontrollers & sensors that are miniscule in size.
