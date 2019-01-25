@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import '../../styles/application.css';
+import '../css/application.css';
 import Input from './Input.js';
 import _ from "underscore";
 import {Redirect} from 'react-router-dom';
 //import { SignUpLink } from './SignUp';
-import { auth } from '../../firebase/firebase';
-import * as routes from '../../router/routes';
+import { auth } from '../firebase/firebase';
+import * as routes from '../router/routes';
 import Button from 'material-ui/Button';
 import { Link } from 'react-router-dom';
 
@@ -110,9 +110,9 @@ class Login extends Component {
             error,
           } = this.state;
 
-        const isInvalid =
+        /*const isInvalid =
             password === '' ||
-            email === '';
+            email === '';*/
 
         return (
             this.state.authUser

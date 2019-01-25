@@ -6,7 +6,7 @@ import LandingPage from '../pages/LandingPage';
 //import Account from '../pages/Account'
 //import Dashboard from '../pages/Dashboard';
 //import CoursesPage from '../components/forum/coursesPage';
-//import LoginPage from "../pages/LoginPage";
+import LoginPage from "../pages/LoginPage";
 //import Forget_password from "../pages/Forget_Password";
 //import Reset_Success from "../pages/Reset_Success";
 import * as routes from './routes.js';
@@ -26,10 +26,10 @@ class RootRouter extends Component {
                 <Route exact path={routes.LANDING}
                 component={() => <LandingPage authUser={this.props.authUser}/>}/>
                 {/*<Route exact path={routes.SIGN_UP}
-                component={() => <SignupPage authUser={this.props.authUser}/>}/>
+                component={() => <SignupPage authUser={this.props.authUser}/>}/>*/}
                 <Route exact path={routes.SIGN_IN}
                 component={() => <LoginPage authUser={this.props.authUser}/>}/>
-                <Route exact path={routes.LOG_OUT}
+                {/*<Route exact path={routes.LOG_OUT}
                        component={() => <Logout authUser={this.props.authUser}/>}/>
                 <Route exact path={routes.PASSWORD_FORGET}
                 component={() => <Forget_password authUser={this.props.authUser}/>}/>

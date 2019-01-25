@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import cx from './classSet';
+import cx from './InputAssets/classSet';
 import _ from 'underscore';
-import PasswordValidator from './PasswordValidator.js';
-import InputError from './InputError.js';
-import Icon from './Icon.js';
-import { Input } from 'material-ui/Input';
+import PasswordValidator from './InputAssets/PasswordValidator.js';
+import InputError from './InputAssets/InputError.js';
+import Icon from './InputAssets/Icon.js';
+import { Input } from 'antd';
 
 class Input2 extends Component{
     constructor(props) {

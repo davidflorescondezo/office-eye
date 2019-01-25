@@ -1,0 +1,56 @@
+.App-signUpElements {
+    font-size: 36px;
+    border: 25px;
+    width : 58%;
+    float : left;
+    margin-top: -15vh;
+    margin-left: 2vh;
+}
+.Fluff-introduction{
+    padding-left: 10%;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+}
+.Fluff-title{
+    padding-top: 10%;
+    font-weight: black;
+    font-size: 150%;
+    margin-left: 0%;
+    padding-left: 2%;
+}
+.Fluff-intro {
+    height : 300px;
+}
+.Fluff-content {
+    margin-top: 0vh;
+    padding-top: 2vh;
+    height: 850px;
+    background: rgb(253, 253, 253);
+}
+.Fluff-container {
+    margin-top: 3%;
+    margin-left: 3%;
+    border: 1px solid;
+    -webkit-box-shadow: 0px 0px 34px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 34px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 34px -6px rgba(0,0,0,0.75);
+    width: 75%;
+    height: 560px;
+}
+.Fluff-insidecontainer {
+    margin-top: -3%;
+    height: 570px;
+    text-align: left;
+}
+.LogInalign {
+    padding-top: 25%;
+}
+.forgotPass {
+    font-size: 60%;
+}
+.Signcontent {
+    padding-top: 30%;
+    margin-top: 30%;
+    font-size: 80%;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import FluffHeader from '../components/layout/FluffHeader.js';
+import HeaderRightPart from './layout/HeaderRightPart';
 //import Footer from '../components/layout/footer.js';
 import Button from 'material-ui/Button';
 import { Link } from 'react-router-dom';
@@ -54,8 +54,8 @@ class LandingPage extends Component {
             this.state.authUser
                 ? (<Redirect to={routes.HOME}/>)
             : (<div>
-                {/*<FluffHeader authUser={this.props.authUser}/>*/}
                 <div className="landing_banner">
+                    <div className="Right-part"><HeaderRightPart authUser={this.props.authUser}/></div>
                     <h1 className="Headline">
                         OfficEye
                     </h1>
