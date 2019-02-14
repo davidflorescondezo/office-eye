@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import BrowserRouter from 'react-router-dom/BrowserRouter';
 import LandingPage from '../pages/LandingPage';
-//import SignupPage from '../pages/SignupPage';
-//import Account from '../pages/Account'
-//import Dashboard from '../pages/Dashboard';
+import SignupPage from '../pages/SignupPage';
+import Account from '../pages/Account'
+import Dashboard from '../pages/Dashboard';
 //import CoursesPage from '../components/forum/coursesPage';
 import LoginPage from "../pages/LoginPage";
 //import Forget_password from "../pages/Forget_Password";
 //import Reset_Success from "../pages/Reset_Success";
 import * as routes from './routes.js';
-//import Logout from "../pages/Logout";
+import Logout from "../pages/Logout";
 import history from './history';
 
 class RootRouter extends Component {
@@ -25,20 +25,20 @@ class RootRouter extends Component {
             <Switch>
                 <Route exact path={routes.LANDING}
                 component={() => <LandingPage authUser={this.props.authUser}/>}/>
-                {/*<Route exact path={routes.SIGN_UP}
-                component={() => <SignupPage authUser={this.props.authUser}/>}/>*/}
+                <Route exact path={routes.SIGN_UP}
+                component={() => <SignupPage authUser={this.props.authUser}/>}/>
                 <Route exact path={routes.SIGN_IN}
                 component={() => <LoginPage authUser={this.props.authUser}/>}/>
-                {/*<Route exact path={routes.LOG_OUT}
+                <Route exact path={routes.LOG_OUT}
                        component={() => <Logout authUser={this.props.authUser}/>}/>
-                <Route exact path={routes.PASSWORD_FORGET}
+                {/*<Route exact path={routes.PASSWORD_FORGET}
                 component={() => <Forget_password authUser={this.props.authUser}/>}/>
                 <Route exact path={routes.RESET_SUCCESS}
-                       component={() => <Reset_Success/>}/>
+                        component={() => <Reset_Success/>}/>*/}
                 <Route path={'/Dashboard'}
                         component={() => <Dashboard authUser={this.props.authUser}/>}/>
                 <Route exact path={routes.ACCOUNT}
-                component={() => <Account authUser={this.props.authUser}/>}/>*/ }
+                component={() => <Account authUser={this.props.authUser}/>}/>
 
 
             </Switch>

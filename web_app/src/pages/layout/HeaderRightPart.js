@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import * as routes from '../../router/routes';
 import { Redirect } from 'react-router-dom';
 import {auth} from "../../firebase/index";
-import { Button } from 'material-ui/Button';
+import { Button } from 'antd';
 
 class HeaderRightpart extends Component {
     constructor(props){
@@ -28,11 +28,9 @@ class HeaderRightpart extends Component {
             this.props.authUser
                 ? (
                     <div className="Right-login">
-                        {this.props.authUser.email}
-                        <Link to={routes.LOG_OUT}>
-                        <Button type="primary">Log Out</Button></Link>
-                        <Link to={routes.ACCOUNT}>
-                        <Button type="primary">My Account</Button></Link>
+                        {this.props.authUser.email}&nbsp;
+                        <a className="login_menu" ><Link to={routes.ACCOUNT}>My Account</Link></a>/
+                        <a className="login_menu" ><Link to={routes.LOG_OUT}>Log Out</Link></a>
                     </div>
                 )
                 : (<div /*className="Right-part"*/>

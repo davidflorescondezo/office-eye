@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Sidebar from '../components/layout/Sidebar.js';
-import UpcomingList from '../components/UpcomingList.js';
-import '../styles/Dashboard.css';
+//import Sidebar from '../components/layout/Sidebar.js';
+//import UpcomingList from '../components/UpcomingList.js';
+import Headers from './layout/Header.js';
+
+import '../css/Dashboard.css';
 import { Layout, Menu, Icon, Button } from 'antd';
 import {Link, Redirect, Route, Switch, Router} from 'react-router-dom';
 import 'antd/dist/antd.css';
@@ -19,12 +21,14 @@ class Dashboard extends Component {
             selectedKey: '',
             collapsed: false,
             authUserDir: auth.currentUser,
+            graphRef: [],
         };
         if(this.state.authUserDir){
             this.userDir = database.ref('/users').child(this.state.authUserDir.uid);
         }
-        this.enrolRef = database.ref('/users/'+ this.state.userDir + '/enrollment');
+        //this.enrolRef = database.ref('/users/'+ this.state.userDir + '/enrollment');
         this.userRef = database.ref('/users').child('Anonymous');
+        
     }
 
     componentDidMount(){
@@ -34,11 +38,11 @@ class Dashboard extends Component {
                 : this.setState(() => ({ authUser: null }));
             if (authUser) {
                 this.userRef = database.ref('users').child(authUser.uid);
-                this.enrolRef.on('value',(snapshot) => {
+                /*this.enrolRef.on('value',(snapshot) => {
                     var judgeEnrollment = snapshot.numChildren();
                     this.setState({judgeEnrollment});
 
-                });
+                });*/
             }
         })
 
@@ -54,13 +58,35 @@ class Dashboard extends Component {
                 ? this.setState(() => ({ authUser }))
                 : this.setState(() => ({ authUser: null }));
         })
+
+        //graphRef
+        let _this = this;
+        //if(this.state.authUserDir && (this.state.judgeEnrollment != 0)) {
+            let postsRef1 = database.ref('/arduinoData').orderByValue().limitToLast(1);
+
+            postsRef1.on('value', (snapshot) => {
+                this.setState({graphRef: snapshot.val()})
+            });
+       // }
     }
 
     render(){
+        let graphRef = this.state.graphRef;
+        if (graphRef){
+            var graphList = Object.keys(graphRef).map(function(key, index) {
+                return  graphRef[key]
+            });
+        }
+        else var graphList = [];
+
         return(
             this.state.authUser
                 ?(
-                    <Layout>
+                    <div>
+                    <Headers authUser={this.props.authUser}/>
+                    <p>{graphList} + Welcome</p> 
+                    </div>
+                    /*<Layout>
                         <Route  render={(props) => (
                             <Sidebar {...props} /> )}/>
 
@@ -76,7 +102,7 @@ class Dashboard extends Component {
                                 </div>
                             </Content>
                         </Layout>
-                    </Layout>)
+                    </Layout>*/)
                 : (<Redirect to={routes.SIGN_IN}/>)
 
         )

@@ -5,7 +5,7 @@ import Login from '../account/Login.js';
 import * as routes from '../router/routes.js';
 import { Link, withRouter,} from 'react-router-dom';
 import { Button } from 'antd';
-import '../css/SignupPage.css'
+import '../css/SignupPage.css';
 
 
 class LoginPage extends Component {
