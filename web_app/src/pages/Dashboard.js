@@ -110,7 +110,6 @@ class Dashboard extends Component {
                 ?(
                     <div>
                     <Headers authUser={this.props.authUser}/>
-                    <p>{graphList} + Welcome</p> 
                     <Graph
                         times={fullData}
                         graphTitle="Current Monitoring"

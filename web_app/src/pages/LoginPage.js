@@ -30,32 +30,19 @@ class LoginPage extends Component {
                         <div className="LogInalign">
                             <Login/>
                         </div>
+                            <Link to={routes.SIGN_UP}>
+                            <Button variant="raised" color="primary"
+                            id="getStarted"
+                            label="Get-Started"
+                            value="Get-Started"
+                            marginTop="normal"
+                            >
+                                Sign up Instead
+                            </Button>
+                            </Link>
                         </div>
                     </div>
                     </div>
-                    <div className="logo">
-                        <img src="http://gdurl.com/e_S5"/*"http://gdurl.com/nG0G"*/ className="Header-logo" alt="logo" style={{width:230, height:"auto"}}/>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-
-                    </div><br/>
-                    <span style={{fontFamily: 'sans-serif'}} className="Signcontent">
-                    Collaboration, coursework discussion and study groups amongst likeminded people
-                    </span>
-                    <p></p>
-                    <Link to={routes.SIGN_UP}>
-                        <Button variant="raised" color="primary"
-                        id="getStarted"
-                        label="Get-Started"
-                        value="Get-Started"
-                        marginTop="normal"
-                        >
-                            Sign up Instead
-                        </Button>
-                    </Link>
                     
                 </div>
                 </div>

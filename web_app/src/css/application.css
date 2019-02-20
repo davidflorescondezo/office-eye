@@ -126,11 +126,11 @@
     opacity: 0;
   }
   ::selection {
-    background: #40b4de;
+    background: #40de43;
     color: #fff;
   }
   ::-moz-selection {
-    background: #40b4de;
+    background: #40de77;
     color: #fff;
   }
   * {
@@ -139,7 +139,7 @@
     -webkit-tap-highlight-color: transparent;
   }
   a {
-    color: #40b4de;
+    color: #40de5d;
     text-decoration: none;
     -webkit-transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
@@ -153,11 +153,11 @@
     user-select: none;
   }
   a:hover {
-    color: #1b7a9d;
+    color: #13b413;
     text-decoration: none;
   }
   a:active {
-    color: #97d6ed;
+    color: #97ed9d;
   }
   a:focus {
     outline: none;
@@ -238,7 +238,7 @@
   }
   .input_group.input_focused label.input_label .label_text,
   .input_group.input_hasValue label.input_label .label_text {
-    color: #0063e6;
+    color: #13b413;
     letter-spacing: .7px;
     font-size: 11px;
   }
@@ -486,7 +486,7 @@
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #363b4a;
+    color: #304031;
     opacity: .25;
     letter-spacing: 1.5px;
   }
@@ -726,7 +726,7 @@
   
   .account_Title{
     font-size: 2em;
-    color: #163774;
+    color: #16743f;
   }
   
   .account_row {
