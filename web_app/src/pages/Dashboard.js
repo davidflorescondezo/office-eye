@@ -10,6 +10,8 @@ import 'antd/dist/antd.css';
 import * as routes from "../router/routes";
 import {auth,database,storage} from '../firebase/firebase';
 
+import Graph from "../account/graph"
+
 const { Sider, Content, Header} = Layout;
 class Dashboard extends Component {
     constructor(props){
@@ -22,13 +24,13 @@ class Dashboard extends Component {
             collapsed: false,
             authUserDir: auth.currentUser,
             graphRef: [],
+            employee: '',
         };
         if(this.state.authUserDir){
             this.userDir = database.ref('/users').child(this.state.authUserDir.uid);
         }
         //this.enrolRef = database.ref('/users/'+ this.state.userDir + '/enrollment');
         this.userRef = database.ref('/users').child('Anonymous');
-        
     }
 
     componentDidMount(){
@@ -43,6 +45,7 @@ class Dashboard extends Component {
                     this.setState({judgeEnrollment});
 
                 });*/
+                this.state.employee = authUser.email;
             }
         })
 
@@ -79,12 +82,39 @@ class Dashboard extends Component {
         }
         else var graphList = [];
 
+        var fullData = [
+            {
+                employeeName: this.state.employee,
+                currentTime: graphList
+            },
+            {
+                employeeName: "employeeNo2@gmail.com",
+                currentTime: 20
+            },
+            {
+                employeeName: "employeeNo3@gmail.com",
+                currentTime: 5
+            },
+            {
+                employeeName: "employeeNo4@gmail.com",
+                currentTime: 40
+            },
+            {
+                employeeName: "employeeNo5@gmail.com",
+                currentTime: 70
+            }
+        ]
+
         return(
             this.state.authUser
                 ?(
                     <div>
                     <Headers authUser={this.props.authUser}/>
                     <p>{graphList} + Welcome</p> 
+                    <Graph
+                        times={fullData}
+                        graphTitle="Current Monitoring"
+                    />
                     </div>
                     /*<Layout>
                         <Route  render={(props) => (
