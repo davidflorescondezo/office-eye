@@ -58,21 +58,21 @@ Step 0 - Make sure you have the following equipment/technologies: A functioning 
 Step 1 - Clone the git project into you local directory by opening a terminal and entering: git clone HTTPSLINK
 
 #### For Ethernet Shield
-Step 2 - Connect your Arduino UNO to your Ethernet Shield and hook it up to the infrared sensor.
-Step 3 - Upload the motion_pir_for_ethernet.s file to your Arduino UNO.
-Step 4 - Open the Dashboard.js file loacted under web_app/src/pages.
-Step 5 - Comment lines 71-79 and Uncomment line 70 & lines 81-85 and save.
+Step 2 - Connect your Arduino UNO to your Ethernet Shield and hook it up to the infrared sensor.<p></p>
+Step 3 - Upload the arduino/motion_pir_for_ethernet.s file to your Arduino UNO.<p></p>
+Step 4 - Open the Dashboard.js file loacted under web_app/src/pages.<p></p>
+Step 5 - Comment lines 71-79 and Uncomment line 70 & lines 81-85 and save.<p></p>
 
 #### For Yun WiFi Shield
-Step 2 - Connect your Arduino UNO to your Yun WiFi Shield and hook it up to the infrared sensor.
-Step 3 - Upload the motion_pir_for_wifi.s file to your Arduino UNO.
+Step 2 - Connect your Arduino UNO to your Yun WiFi Shield and hook it up to the infrared sensor.<p></p>
+Step 3 - Upload the arduino/motion_pir_for_wifi.ino file to your Arduino UNO.<p></p>
 
 #### Run Web App
-Step 1 - Download node.js -- https://nodejs.org/en/2. 
-Step 2 - Open the terminal, navigate to the folder web_app through the terminal.
-Step2.5 - If Node Modules aren't in folder then run the command "npm install".
-Step 3 - Then run "npm start".
-Step 4 - Go to http://localhost:3000/.
+Step 1 - Download node.js -- https://nodejs.org/en/2. <p></p>
+Step 2 - Open the terminal, navigate to the folder web_app through the terminal.<p></p>
+Step2.5 - If Node Modules aren't in folder then run the command "npm install".<p></p>
+Step 3 - Then run "npm start". <p></p>
+Step 4 - Go to http://localhost:3000/. <p></p>
 
 ### About Me
 My name is David, I am an aspiring Software Engineer/Developer currently studying Computer Science at the Australian National University.
