@@ -1,8 +1,26 @@
 # OfficEye
 
+## Table of Contents
+  * [Pitch](#pitch)
+  * [Feature List](#feature-list)
+  * [Hardware/Software Used] (#hardwaresoftware-used)
+  * [Management and Development Process] (#management-and-development-process)
+  * [Milestones](#milestones)
+  * [Build Instructions](#build-instructions)
+  * [Code of Conduct](#code-of-conduct)
+
 ### Pitch
 As an employer do you often struggle keeping your employees motivated? Do you wish you could know what your employees are really upto? Do you wish you could know how many hrs a day they really spend working?
 OfficeEye is your solution. OfficeEye will keep track of the time your employees spend on their desks and whether they are working on their computers or not. OfficeEye will compile all this information and display it for you in a super easy to use UI for you to manage all your employees, alongside a scoreboard visible to employees to keep them motivated and create a competetive environment encouraging employees to work more.
+
+### Feature List
+
+#### Toolkit
+   - IoT (Infrared Sensor) integrated Web App
+   
+#### Dashboard
+   - Realtime Employee Monitoring Statistics
+   - Dynamic Widgets
 
 ### Hardware/Software Used
 For this kind of "monitoring/survalance" system I would prefer for my artifact to be as small as possible to keep it as concealed to the employee as possible. This is to create a safe enevirnoment for the employee. As a result I have researched microcontrollers & sensors that are miniscule in size.
@@ -11,19 +29,26 @@ With a Wifi-Shield that will allow an ease connection to a ESP-01 WiFi Module.
 
 Using Python & PHP the data gathered will be sent from the sensor to a database. In terms of software & databases & Api's i'm deciding whether to use C# & MySQL or just use Google Firebase's Realtime Database which would make it easier to deploy it. Then for the front-end UI I plan on using Material under the React Framework.
 
+### Management and Development Process
+I've been using an agile project management structure, consisting of weekly 'sprints' - or a set of tasks I aim to get done in the week. This 'modular' approach enables greater control and organisation over the development process, as it splits tasks into smaller and more management segments. 
+
+Each individual task within a sprint, as described above, is called a 'ticket'. To determine the tickets that fall into each sprint, i've decided what I want to have done at a certain point of time, before breaking that up into series of individual components. From there, I am able to develop the individual tickets necessary for each component. 
+
+Once the tickets are created, I order them into approximate times - or sprints - that they should be worked on and completed, with a view to the optimal development process. This takes into account development dependencies - tasks that need to be done prior to the development of another.
+
 ### Milestones
 
-| **Key Milestones** | **Start Date** | **Projected End Date** |
-|-------------------------------------------------|--------|--------|
-| Experiment with MicroController | 27 Dec | 02 Jan |
-| Programming MicroController/Sensor | 02 Jan |  08 Jan |
-| **Pre-Minimum Viable Product** | 08 Jan | 08 Jan |
-| Hooking it up to the database | 08 Jan | 15 Jan |
-| Connecting the database with basic front-end UI | 22 Jan | 29 Jan |
-| **Minimum Viable Product** | 29 Jan | 29 Jan |
-| Developing/Designing the front-end UI | 29 Jan | 05 Feb |
-| Polishing/Garbage Collection | 29 Jan | 05 Feb |
-| **Live Version** | 06 Feb | 06 Feb |
+| **Key Milestones** | **Start Date** | **Projected End Date** | **Actual End Date** |
+|-------------------------------------------------|--------|--------||--------|
+| Experiment with MicroController | 27 Dec | 02 Jan | 02 Jan |
+| Programming MicroController/Sensor | 02 Jan |  08 Jan | 15 Jan |
+| **Pre-Minimum Viable Product** | 08 Jan | 08 Jan | 15 Jan |
+| Hooking it up to the database | 08 Jan | 15 Jan | 05 Feb |
+| Connecting the database with basic front-end UI | 22 Jan | 29 Jan | 29 Jan |
+| **Minimum Viable Product** | 29 Jan | 29 Jan | 05 Feb |
+| Developing/Designing the front-end UI | 29 Jan | 05 Feb | 15 Feb |
+| Polishing/Garbage Collection | 29 Jan | 05 Feb | 19 Feb |
+| **Live Version** | 06 Feb | 06 Feb | 19 Feb |
 for more info check out: https://trello.com/b/8vvpgd2T/officeye
 
 ### Build Instructions
