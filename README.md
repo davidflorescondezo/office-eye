@@ -27,3 +27,25 @@ In terms of software & databases & Api's i'm deciding whether to use C# & MySQL 
 | Polishing/Garbage Collection | 29 Jan | 05 Feb |
 | **Live Version** | 06 Feb | 06 Feb |
 for more info check out: https://trello.com/b/8vvpgd2T/officeye
+
+### Build Instructions
+Step 0 - Make sure you have the following equipment/technologies: A functioning computer, Arduino UNO, Ethernet Shield or Yun WiFi Shield, Adafruit Infrared Sensor.
+
+Step 1 - Clone the git project into you local directory by opening a terminal and entering: git clone HTTPSLINK
+
+#### For Ethernet Shield
+Step 2 - Connect your Arduino UNO to your Ethernet Shield and hook it up to the infrared sensor
+Step 3 - Upload the motion_pir_for_ethernet.s file to your Arduino UNO
+Step 4 - Open the Dashboard.js file loacted under web_app/src/pages
+Step 5 - Comment lines 71-79 and Uncomment line 70 & lines 81-85 and save
+
+#### For Yun WiFi Shield
+Step 2 - Connect your Arduino UNO to your Yun WiFi Shield and hook it up to the infrared sensor
+Step 3 - Upload the motion_pir_for_wifi.s file to your Arduino UNO
+
+#### Run Web App
+Step 1 - Download node.js -- https://nodejs.org/en/2. 
+Step 2 - Open the terminal, navigate to the folder web_app through the terminal
+Step2.5 - If Node Modules aren't in folder then run the command "npm install"
+Step 3 - Then run "npm start"
+Step 4 - Go to http://localhost:3000/
