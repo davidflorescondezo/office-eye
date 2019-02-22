@@ -8,6 +8,7 @@
   * [Milestones](#milestones)
   * [Build Instructions](#build-instructions)
   * [Code of Conduct](#code-of-conduct)
+  * [About Me](#about-me)
 
 ### Pitch
 As an employer do you often struggle keeping your employees motivated? Do you wish you could know what your employees are really upto? Do you wish you could know how many hrs a day they really spend working?
@@ -72,3 +73,8 @@ Step 2 - Open the terminal, navigate to the folder web_app through the terminal.
 Step2.5 - If Node Modules aren't in folder then run the command "npm install".
 Step 3 - Then run "npm start".
 Step 4 - Go to http://localhost:3000/.
+
+### About Me
+My name is David, I am an aspiring Software Engineer/Developer currently studying Computer Science at the Australian National University.
+My interests lie under: Ubiquitous Computing, Human Centric Computing, Virtual Reality & Web Technologies.
+I am best contactable through my email: david.florescondezo@gmail.com
