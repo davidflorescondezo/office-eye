@@ -39,7 +39,7 @@ Once the tickets are created, I order them into approximate times - or sprints -
 ### Milestones
 
 | **Key Milestones** | **Start Date** | **Projected End Date** | **Actual End Date** |
-|-------------------------------------------------|--------|--------||--------|
+|-------------------------------------------------|--------|--------|--------|
 | Experiment with MicroController | 27 Dec | 02 Jan | 02 Jan |
 | Programming MicroController/Sensor | 02 Jan |  08 Jan | 15 Jan |
 | **Pre-Minimum Viable Product** | 08 Jan | 08 Jan | 15 Jan |
