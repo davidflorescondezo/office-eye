@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import HeaderRightPart from './layout/HeaderRightPart';
-//import Footer from '../components/layout/footer.js';
 import Button from 'material-ui/Button';
 import { Link } from 'react-router-dom';
 import {Redirect} from 'react-router-dom';

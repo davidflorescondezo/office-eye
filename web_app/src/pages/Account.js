@@ -1,24 +1,9 @@
 import React, { Component } from 'react';
-//import '../styles/application.css';
 import { Layout, Divider, Avatar, Button} from 'antd';
 
 import {auth, database, storage} from '../firebase/firebase';
 import {Redirect, Link} from 'react-router-dom';
 import * as routes from '../router/routes';
-
-//import { PasswordForgetForm } from './PasswordForget';
-//import PasswordChangeForm from '../components/account/Change_Password';
-//import Sidebar from "../components/layout/Sidebar";
-
-/*const AccountPage = (props, { authUser }) =>
-  <div>
-    <h1>Account: {authUser.email}</h1>
-    <PasswordChangeForm />
-  </div>
-
-AccountPage.contextTypes = {
-  authUser: PropTypes.object,
-};*/
 
 class AccountPage extends Component {
     constructor(props){

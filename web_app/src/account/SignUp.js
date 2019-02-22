@@ -4,7 +4,6 @@ import '../css/application.css';
 import Input from './Input.js';
 import _ from 'underscore';
 import {Redirect} from 'react-router-dom';
-//import '../../styles/application.css';
 import { auth, database } from '../firebase/firebase';
 import * as routes from '../router/routes.js';
 import { Radio } from 'antd';
@@ -220,27 +219,7 @@ class SignUp extends Component {
         );
     }
 }
-/*
-                        <RadioGroup style={{fontWeight:'bold'}}
-                                    defaultValue={1}
-                                    onChange={event => this.setState(byPropKey('role', event.target.value))}
-                                    value={role}>
 
-                            <Radio style={{fontSize:'15px'}} value={3}>Join as Student</Radio>
-                            <Radio style={{fontSize:'15px'}} value={2}>Join as Instructor</Radio>
-                            <Radio style={{fontSize:'15px'}} value={1}>Join as Lecturer</Radio>
-                        </RadioGroup>
- */
-/* Henry:
-                        <Select
-                        defaultValue="Choose a role"
-                        >
-                            <Option value="disable" disabled>You sign up as a</Option>
-                            <Option value="lectuer">Lecturer</Option>
-                            <Option value="student">Student</Option>
-                            <Option value="tutor">Tutor</Option>
-                        </Select>
- */
 const SignUpLink = () =>
   <p>
     Don't have an account?

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-//import Sidebar from '../components/layout/Sidebar.js';
-//import UpcomingList from '../components/UpcomingList.js';
+
 import Headers from './layout/Header.js';
 
 import '../css/Dashboard.css';
@@ -31,7 +30,6 @@ class Dashboard extends Component {
         if(this.state.authUserDir){
             this.userDir = database.ref('/users').child(this.state.authUserDir.uid);
         }
-        //this.enrolRef = database.ref('/users/'+ this.state.userDir + '/enrollment');
         this.userRef = database.ref('/users').child('Anonymous');
     }
 
@@ -42,11 +40,7 @@ class Dashboard extends Component {
                 : this.setState(() => ({ authUser: null }));
             if (authUser) {
                 this.userRef = database.ref('users').child(authUser.uid);
-                /*this.enrolRef.on('value',(snapshot) => {
-                    var judgeEnrollment = snapshot.numChildren();
-                    this.setState({judgeEnrollment});
 
-                });*/
                 this.state.employee = authUser.email;
             }
         })
@@ -68,7 +62,7 @@ class Dashboard extends Component {
         let _this = this;
         //if(this.state.authUserDir && (this.state.judgeEnrollment != 0)) {
             //let postsRef1 = database.ref('/arduinoData').orderByValue().limitToLast(1);//ONLY FOR ETHERNET
-            let postsRef1 = database.ref('/arduinoData').orderByChild("value").limitToLast(1);
+            let postsRef1 = database.ref('/arduinoData').orderByChild("value").limitToLast(1); //ONLY FOR WIFI
             console.log(postsRef1);
 
             postsRef1.on("value", function(snapshot) {
@@ -76,7 +70,7 @@ class Dashboard extends Component {
                   console.log(child.val().value);
                   _this.setState({graphRef: child.val()});
                 });
-              });
+              }); //ONLY FOR WIFI
 
             /*postsRef1.on('value', (snapshot) => {
                 this.setState({graphRef: snapshot.val().value})
@@ -173,23 +167,7 @@ class Dashboard extends Component {
                     </table>
                     </div>
                     </div>
-                    /*<Layout>
-                        <Route  render={(props) => (
-                            <Sidebar {...props} /> )}/>
-
-                        <Layout>
-
-                            <Content
-                                style={{ background: '#fff', padding: '24px 24px 24px 35px', margin: 0, minHeight: 280 }}>
-                                <div>
-                                    <Switch>
-                                        <Route exact path={'/Dashboard'} component={UpcomingList} />
-
-                                    </Switch>
-                                </div>
-                            </Content>
-                        </Layout>
-                    </Layout>*/)
+)
                 : (<Redirect to={routes.SIGN_IN}/>)
 
         )
@@ -197,7 +175,3 @@ class Dashboard extends Component {
 }
 
 export default Dashboard;
-//   <Sidebar grouplist={grouplist}/>
-// <Route exact path={'/Dashboard/forum/newPostDetail'} component={NewPostDetail}/>
-// <Route exact path={'/Dashboard/forum'} component={forum}/>
-// <Route exact path={'/Dashboard/forum/postDetail'} component={PostDetail}/>
