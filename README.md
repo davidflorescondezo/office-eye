@@ -6,12 +6,10 @@ OfficeEye is your solution. OfficeEye will keep track of the time your employees
 
 ### Hardware/Software Used
 For this kind of "monitoring/survalance" system I would prefer for my artifact to be as small as possible to keep it as concealed to the employee as possible. This is to create a safe enevirnoment for the employee. As a result I have researched microcontrollers & sensors that are miniscule in size.
-After a substantial ammount of researching, combining accessiblity & budget, 
-This project will be using an Arduino UNO R3 alongside a small Infrared Sensor. 
+After a substantial ammount of researching, combining accessiblity & budget, This project will be using an Arduino UNO R3 alongside a small Infrared Sensor. 
 With a Wifi-Shield that will allow an ease connection to a ESP-01 WiFi Module.
 
-Using Python & PHP the data gathered will be sent from the sensor to a database.
-In terms of software & databases & Api's i'm deciding whether to use C# & MySQL or just use Google Firebase's Realtime Database which would make it easier to deploy it. Then for the front-end UI I plan on using Material under the React Framework.
+Using Python & PHP the data gathered will be sent from the sensor to a database. In terms of software & databases & Api's i'm deciding whether to use C# & MySQL or just use Google Firebase's Realtime Database which would make it easier to deploy it. Then for the front-end UI I plan on using Material under the React Framework.
 
 ### Milestones
 
