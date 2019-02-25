@@ -71,7 +71,7 @@ Step 3 - Upload the arduino/motion_pir_for_wifi.ino file to your Arduino UNO.<p>
 #### Run Web App
 Step 1 - Download node.js -- https://nodejs.org/en/2. <p></p>
 Step 2 - Open the terminal, navigate to the folder web_app through the terminal.<p></p>
-Step2.5 - If Node Modules aren't in folder then run the command "npm install".<p></p>
+Step2.5 - Run the command "npm install".<p></p>
 Step 3 - Then run "npm start". <p></p>
 Step 4 - Go to http://localhost:3000/. <p></p>
 
