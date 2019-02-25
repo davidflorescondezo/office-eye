@@ -56,6 +56,7 @@ for more info check out: https://trello.com/b/8vvpgd2T/officeye
 Step 0 - Make sure you have the following equipment/technologies: A functioning computer, Arduino UNO, Ethernet Shield or Yun WiFi Shield, Adafruit Infrared Sensor.
 
 Step 1 - Clone the git project into you local directory by opening a terminal and entering: git clone HTTPSLINK
+Step 1.5 - Navigate to the office-eye folder on the terminal and switch to the development branch by using git checkout development on the terminal
 
 #### For Ethernet Shield
 Step 2 - Connect your Arduino UNO to your Ethernet Shield and hook it up to the infrared sensor.<p></p>
